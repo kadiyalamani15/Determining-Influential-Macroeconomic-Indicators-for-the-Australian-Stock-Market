@@ -117,7 +117,6 @@
 
 <br>
 <br>
-<br>
 
 ### Flowchart
 
@@ -126,3 +125,12 @@
 <p align="center">
   <img src="flowcharts/Vaishu_Stocks_methodology_detail.drawio.png">
 </p>
+
+<br>
+<br>
+
+### Results
+
+<br>
+<br>
+
