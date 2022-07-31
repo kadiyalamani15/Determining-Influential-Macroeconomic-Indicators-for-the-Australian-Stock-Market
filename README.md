@@ -1,8 +1,9 @@
 # Determining Influential Macroeconomic Indicators for the Australian Stock Market
 
-### 79 Macroeconomic Indices
-
-
+### 79 Macroeconomic Indices  
+  
+  
+  
 <table align="center">
   <tr>
     <td> AUSBOT </td>
