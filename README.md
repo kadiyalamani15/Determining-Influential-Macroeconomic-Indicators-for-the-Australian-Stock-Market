@@ -4,7 +4,6 @@
 
 <br>
 <br>
-<br>
 
 <table align="center">
   <tr>
@@ -122,7 +121,6 @@
 
 ### Flowchart
 
-<br>
 <br>
 <br>
 <p align="center">
