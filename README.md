@@ -2,7 +2,7 @@
 
 ### 79 Macroeconomic Indices
 
-| Header | Header | Header |
+|        |       |       |
 | ------ | ----- | ----- |
 | AUSBOT | AUSBP | AUSBR | 
 * AUSCA 
