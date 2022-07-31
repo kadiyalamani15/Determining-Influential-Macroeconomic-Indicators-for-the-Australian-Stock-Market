@@ -2,6 +2,7 @@
 
 ### 79 Macroeconomic Indices
 
+
 <table align="center">
   <tr>
     <td> AUSBOT </td>
@@ -113,7 +114,7 @@
 </table>
 
 
-## Flowchart
+### Flowchart
 <p align="center">
   <img src="flowcharts/Vaishu_Stocks_methodology_detail.drawio.png">
 </p>
