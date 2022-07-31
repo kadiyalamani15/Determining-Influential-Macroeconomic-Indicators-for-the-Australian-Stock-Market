@@ -69,8 +69,8 @@
     <td> AUSGNP </td>
   </tr>
   <tr>
-    <td> AUSWAGE <td> 
-    <td> AUSGOLD <td>
+    <td> AUSWAGE </td> 
+    <td> AUSGOLD </td>
     <td> AUSGPC </td>
   </tr>
   <tr>
@@ -79,9 +79,9 @@
     <td> AUSHOOD </td>
   </tr>
   <tr>
-    <td> AUSIBOR <td> 
-    <td> AUSIMPX <td> 
-    <td> AUSIMVOL <td>
+    <td> AUSIBOR </td> 
+    <td> AUSIMPX </td> 
+    <td> AUSIMVOL </td>
   </tr>
   <tr>
     <td> AUSINFEX </td> 
