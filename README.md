@@ -2,7 +2,7 @@
 
 ### 79 Macroeconomic Indices
 
-<table>
+<table align="center">
   <tr>
     <td> AUSBOT </td>
     <td> AUSBP </td>
