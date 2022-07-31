@@ -2,7 +2,9 @@
 
 ### Summary
 <br>
+<p align="justify">
 Macroeconomic Indicators help in drawing insights of a nation. These macroeconomic indicators are used here to predict the performance of the Australian Stock Exchange (ASX) and National Stock Exchange (NSX). Data ranges from 2010-2018, where it has been aggregated to monthly form. Before regressing the indices, the data has been put through data reduction tests like Correlation, Bartlett test, KMO test, Principal Component Analysis (PCA) and PCA with VARIMAX. Out of seventy-nine indices, the indices which failed to load onto a factor or component in PCA with VARIMAX were dropped, and the iteration of PCA and PCA with VARIMAX continued. As per Eigen Values, K1-Kaiser test, for the data being used, there were nine components or factors, the indices which had the highest loading on to these respective components were put to ADF test to check for the stationarity of the time series data, and this final data was used in regressing. The results and flowchart are attached below for a clear understanding.
+</p>
 <br>
 <br>
 
