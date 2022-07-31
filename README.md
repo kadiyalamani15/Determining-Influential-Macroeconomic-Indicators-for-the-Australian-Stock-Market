@@ -2,9 +2,7 @@
 
 ### 79 Macroeconomic Indices
 
-* AUSBOT 
-* AUSBP 
-* AUSBR 
+| AUSBOT | AUSBP | AUSBR | 
 * AUSCA 
 * AUSCARS 
 * AUSCBBS 
