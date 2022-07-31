@@ -1,6 +1,6 @@
 # Determining Influential Macroeconomic Indicators for the Australian Stock Market
 
-### 79 Macroeconomic Indices
+### Australian Macroeconomic Indices
 
 <br>
 <br>
