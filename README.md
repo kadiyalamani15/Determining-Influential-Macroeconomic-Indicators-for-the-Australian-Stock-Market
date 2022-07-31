@@ -129,7 +129,7 @@ Macroeconomic Indicators help in drawing insights of a nation. These macroeconom
 <br>
 <br>
 <p align="center">
-  <img src="flowcharts/Vaishu_Stocks_methodology_detail.drawio.png">
+  <img src="flowcharts/Stocks_methodology_detail.drawio.png">
 </p>
 
 <br>
