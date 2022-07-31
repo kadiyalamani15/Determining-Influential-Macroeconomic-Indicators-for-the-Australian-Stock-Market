@@ -134,6 +134,7 @@ Macroeconomic Indicators help in drawing insights of a nation. These macroeconom
   <img src="flowcharts/Stocks_methodology_detail.drawio.png">
 </p>
 
+
 <br>
 <br>
 
@@ -142,3 +143,18 @@ Macroeconomic Indicators help in drawing insights of a nation. These macroeconom
 <br>
 <br>
 
+<p align="center">
+  <img src="plots/asx_pred.png">
+</p>
+
+<p>
+  Accuracy: 94.81%
+</p>
+
+<p align="center">
+    <img src="plots/nsx_pred.png">
+</p>
+  
+<p>
+  Accuracy: 74.57%
+</p>
