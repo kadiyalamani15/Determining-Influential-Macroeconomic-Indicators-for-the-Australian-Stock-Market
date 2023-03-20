@@ -128,7 +128,8 @@ In future work, this project can be extended to the prediction of the ASX and NS
 
 ## Methodology
 The following flowchart explains the methodology used in this project.
-```flowchart TD
+```mermaid
+flowchart TD
 start((Start)) --> load[Load Dataset]
 load --> agg[Aggregate the dataset into monthly form]
 agg --> corr[Find Correlation Matrix]
