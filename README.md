@@ -128,7 +128,7 @@ In future work, this project can be extended to the prediction of the ASX and NS
 
 ## Methodology
 The following flowchart explains the methodology used in this project.
-``mermaid
+```mermaid
 flowchart TD
 start((Start)) --> load[Load Dataset]
 load --> agg[Aggregate the dataset into monthly form]
@@ -153,7 +153,8 @@ garch-->garch_condition{if 	α + β <  1}--False-->garch_diff[Find another diffe
 garch_condition--True-->stationary
 stationary-->reg[Perform Regression]
 reg-->indices[Influential Macroeconomic Indices]
-indices-->stop((Stop))``
+indices-->stop((Stop))
+```
 
 ## Technology Stack
 The following technologies were used in this project:
