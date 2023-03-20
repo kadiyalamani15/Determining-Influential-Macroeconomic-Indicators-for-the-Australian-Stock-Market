@@ -1,14 +1,8 @@
 # Determining Influential Macroeconomic Indicators for the Australian Stock Market
 
-### Summary
-<br>
-<p align="justify">
-Macroeconomic Indicators help in drawing insights of a nation. These macroeconomic indicators are used here to predict the performance of the Australian Stock Exchange (ASX) and National Stock Exchange (NSX). Data ranges from 2010-2018, where it has been aggregated to monthly form. Before regressing the indices, the data has been put through data reduction tests like Correlation, Bartlett test, KMO test, Principal Component Analysis (PCA) and PCA with VARIMAX. Out of seventy-nine indices, the indices which failed to load onto a factor or component in PCA with VARIMAX were dropped, and the iteration of PCA and PCA with VARIMAX continued. As per Eigen Values, K1-Kaiser test, for the data being used, there were nine components or factors, the indices which had the highest loading on to these respective components were put to ADF test to check for the stationarity of the time series data, and this final data was used in regressing. The regression results and flowchart are attached below for a clear understanding. In future work, this work can be extended to the prediction of the ASX and NSX stock markets could be improved with the help of Long-Short Term Memory from Recurrent Neural Networks, which works very comfortable with the time series data.
-</p>
-<br>
-<br>
+This project aims to use macroeconomic indicators to draw insights into the performance of the Australian Stock Exchange (ASX) and National Stock Exchange (NSX). The data used in this project ranges from 2010-2018 and has been aggregated to monthly form.
 
-### Australian Macroeconomic Indices
+## Australian Macroeconomic Indices
 
 <br>
 <br>
@@ -126,19 +120,52 @@ Macroeconomic Indicators help in drawing insights of a nation. These macroeconom
 <br>
 <br>
 
-### Flowchart
+## Data Preparation
+Before regressing the indices, the data has been put through data reduction tests like Correlation, Bartlett test, KMO test, Principal Component Analysis (PCA), and PCA with VARIMAX. Out of seventy-nine indices, the indices which failed to load onto a factor or component in PCA with VARIMAX were dropped, and the iteration of PCA and PCA with VARIMAX continued. As per Eigen Values, K1-Kaiser test, for the data being used, there were nine components or factors, the indices which had the highest loading onto these respective components were put to ADF test to check for the stationarity of the time-series data, and this final data was used in regressing.
 
-<br>
-<br>
-<p align="center">
-  <img src="flowcharts/Stocks_methodology_detail.drawio.png">
-</p>
+## Future Work
+In future work, this project can be extended to the prediction of the ASX and NSX stock markets could be improved with the help of Long-Short Term Memory from Recurrent Neural Networks, which works very comfortably with the time-series data.
 
+## Methodology
+The following flowchart explains the methodology used in this project.
+flowchart TD
+start((Start)) --> load[Load Dataset]
+load --> agg[Aggregate the dataset into monthly form]
+agg --> corr[Find Correlation Matrix]
+corr --> corr_res{If matrix has more positive and negative values}
+corr_res --True--> tests[Perform Bartlett test and KMO test]
+corr_res--False-->scale
+tests --> kmo{If KMO > 0.5} --True-->scale[Scaling the data]
+kmo --False-->agg
+scale --> pca[PCA]
+pca --> varimax[PCA with VARIMAX]
+varimax --> condition{If factor loaded onto only one component}
+condition--True-->adf[Perform ADF test]
+condition--False-->pca
+adf-->p_value{If P value < 0.05}
+p_value--True-->stationary[Factors are stationary]
+p_value--1st Run False-->first_diff[Find First Difference]
+first_diff-->adf
+p_value--2nd Run False-->second_diff[Find Second Difference]
+second_diff-->garch[Perform GARCH Model]
+garch-->garch_condition{if 	α + β <  1}--False-->garch_diff[Find another difference]-->garch
+garch_condition--True-->stationary
+stationary-->reg[Perform Regression]
+reg-->indices[Influential Macroeconomic Indices]
+indices-->stop((Stop))
 
-<br>
-<br>
+## Technology Stack
+The following technologies were used in this project:
 
-### Regression Results
+- Python
+- Pandas
+- Numpy
+- Scikit-learn PCA
+- Scikit-learn StandardScaler
+- Factor analyzer
+- Matplotlib
+
+## Regression Results
 
 <br>
 <br>
@@ -158,3 +185,6 @@ Macroeconomic Indicators help in drawing insights of a nation. These macroeconom
 <p>
   NSX Prediction Accuracy: 74.57%
 </p>
+
+## Contributions
+This project was developed by Konda Vaishnavi, Manish Chandra Kadiyala, and Prakash K Aithal at Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, Karnataka, India.
