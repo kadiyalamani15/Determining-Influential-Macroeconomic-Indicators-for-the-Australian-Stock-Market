@@ -1,6 +1,6 @@
 # Determining Influential Macroeconomic Indicators for the Australian Stock Market
 
-This project aims to use macroeconomic indicators to draw insights into the performance of the Australian Stock Exchange (ASX) and National Stock Exchange (NSX). The data used in this project ranges from 2010-2018 and has been aggregated to monthly form.
+This project focuses on using macroeconomic indicators to predict the performance of the Australian Stock Exchange (ASX) and National Stock Exchange (NSX). The data ranges from 2010-2018 and has been aggregated to monthly form. 
 
 ## Australian Macroeconomic Indices
 
@@ -120,8 +120,19 @@ This project aims to use macroeconomic indicators to draw insights into the perf
 <br>
 <br>
 
-## Data Preparation
-Before regressing the indices, the data has been put through data reduction tests like Correlation, Bartlett test, KMO test, Principal Component Analysis (PCA), and PCA with VARIMAX. Out of seventy-nine indices, the indices which failed to load onto a factor or component in PCA with VARIMAX were dropped, and the iteration of PCA and PCA with VARIMAX continued. As per Eigen Values, K1-Kaiser test, for the data being used, there were nine components or factors, the indices which had the highest loading onto these respective components were put to ADF test to check for the stationarity of the time-series data, and this final data was used in regressing.
+## Data Reduction Tests
+
+Before regressing the indices, the data has been put through data reduction tests to ensure the accuracy of the predictions. The tests included:
+
+- Correlation
+- Bartlett test
+- KMO test
+- Principal Component Analysis (PCA)
+- PCA with VARIMAX
+
+Out of seventy-nine indices, the indices which failed to load onto a factor or component in PCA with VARIMAX were dropped, and the iteration of PCA and PCA with VARIMAX continued. As per Eigen Values, K1-Kaiser test, for the data being used, there were nine components or factors. 
+
+The indices which had the highest loading on to these respective components were put to ADF test to check for the stationarity of the time series data. This final data was used in regressing. 
 
 ## Future Work
 In future work, this project can be extended to the prediction of the ASX and NSX stock markets could be improved with the help of Long-Short Term Memory from Recurrent Neural Networks, which works very comfortably with the time-series data.
@@ -188,5 +199,20 @@ The following technologies were used in this project:
   NSX Prediction Accuracy: 74.57%
 </p>
 
+## Usage
+
+The project is available as a Python notebook, and the dataset can be downloaded from the source.
+
 ## Contributions
-This project was developed by Konda Vaishnavi, Manish Chandra Kadiyala, and Prakash K Aithal at Manipal Institute of Technology, Manipal Academy of Higher Education, Manipal, Karnataka, India.
+
+Contributions are welcome! If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Write your code and add tests if necessary.
+4. Commit your changes and push your branch to your fork.
+5. Submit a pull request with a detailed description of your changes.
+
+## Credits
+
+This project was developed by Konda Vaishnavi, Manish Chandra Kadiyala, and Prakash K Aithal at Manipal Institute of Technology.
