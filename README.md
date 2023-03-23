@@ -201,7 +201,7 @@ The following technologies were used in this project:
 
 ## Usage
 
-The project is available as a Python notebook, and the dataset can be downloaded from the source.
+The project is available as a Python notebook, and the dataset can be shared upon request.
 
 ## Contributions
 
